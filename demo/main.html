@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>地府天气</title>
+    <link rel='stylesheet' href='https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css'>
+    <script src='https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js'></script>
+    <script src='https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js'></script>
+    <script src='https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <link rel='stylesheet' href='/css/style.css'>
+    <script src='/scripts/main.js'></script>
+</head>
+
+<body id='base-body'>
+    <div class='container page-font'>
+        <div class='row navbar-bgc navbar navbar-expand-sm'>
+            <img src='/images/icon.png' class='col-1'>
+            <div class='horizontal col-4' id='page-title'>地府天气</div>
+            <div class='horizontal col-1'></div>
+            <div class='input-group mb-4 input-bar align-self-end col-3'>
+                <input class='form-control input-textarea' id='input-box' type='text' placeholder='呐？想要查询什么城市'>
+                <button class='btn btn-light input-textarea' id='submit-btn' type='submit'></button>
+            </div>
+            <div class='navbar-text col-3' id='whereami'>您的位置：</div>
+        </div>
+        <div class='row'>
+            <div class='col-12 btn-group btn-group-toggle'>
+                <button type='button' class='btn col-4 toggle-bar toggle-default toggle-selected' id='btn-weather'>今日天气</button>
+                <button type='button' class='btn col-4 toggle-bar toggle-default' id='btn-future'>未来6日</button>
+                <button type='button' class='btn col-4 toggle-bar toggle-default' id='btn-chart'>天气趋势</button>
+            </div>
+        </div>
+        <div>
+            <div class='jumbotron condition-box' id='weather-today'>
+                <div class='row'>
+                    <div class='col-5' id='main-page-picture'>我是图片</div>
+                    <div class='col-7 weather-condition'>
+                        <h2 class='condition-title'>当前天气状况</h2>
+                        <span class='text-body' id='city'></span></br>
+                        <span class='text-body' id='weather'></span>&nbsp;
+                        <span class='text-body' id='temperature'></span></br>
+                        空气质量：<span class='text-body' id='air'></span></br>
+                        空气湿度：<span class='text-body' id='humidity'></span></br>
+                        日期：<span class='text-body' id='date'></span></br>
+                        <span class='text-body' id='weekday'></span></br>
+                        最后更新于：<span class='text-body' id='last-update'></span></br>
+                    </div>
+                </div>
+            </div>
+            <div class='jumbotron condition-box' id='days-to-come'>
+                <div class="row">
+                    <div class='col-2 tocome-box session-1'></div>
+                    <div class='col-2 tocome-box session-2'></div>
+                    <div class='col-2 tocome-box session-3'></div>
+                    <div class='col-2 tocome-box session-4'></div>
+                    <div class='col-2 tocome-box session-5'></div>
+                    <div class='col-2 tocome-box session-6'></div>
+                </div>
+            </div>
+            <div class='jumbotron condition-box' id='chart'>
+                <div class='row'>
+                    <div class='col-12' id='chart-box'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

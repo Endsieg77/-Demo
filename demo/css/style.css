@@ -1,0 +1,144 @@
+#base-body {
+    background-image: '/images/sunny-day.png';
+}
+
+#page-title {
+    color: aliceblue;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 1.5rem;
+}
+
+.navbar-bgc {
+    position: relative;
+    margin-left: 1.5rem;
+    background-color: rgb(42, 42, 202);
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.horizontal {
+    /* position: absolute; */
+    bottom: 0;
+}
+
+#whereami {
+    margin-left: 1.5rem;
+}
+
+.page-font {
+    font-family: '幼圆', 'Segoe UI';
+}
+
+.input-bar {
+    margin-left: 1.5rem;
+}
+
+.input-textarea {
+    font-size: 1.5rem;
+}
+
+#submit-btn {
+    color: aliceblue;
+    background-color: lightskyblue;
+}
+
+#submit-btn:hover {
+    color: rgb(220, 226, 231);
+    background-color: rgb(24, 24, 196);
+}
+
+#submit-btn::before {
+    content: '查询';
+}
+
+.toggle-bar {
+    color: aliceblue;
+    font-size: large;
+    margin: 0.5rem;
+    height: 5rem;
+}
+
+.toggle-bar:hover {
+    color: rgb(220, 226, 231);
+    background-color: rgb(27, 169, 252);
+}
+
+.toggle-bar:focus {
+    color: rgb(220, 226, 231);
+    background-color: rgb(27, 169, 252);
+}
+
+.toggle-bar:active {
+    color: rgb(220, 226, 231);
+    background-color: rgb(27, 169, 252);
+}
+
+.toggle-default {
+    background-color: lightskyblue;
+}
+
+.toggle-selected {
+    color: rgb(220, 226, 231);
+    background-color: rgb(27, 169, 252);
+}
+
+.current-picture {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    border-radius: 1.5rem;
+}
+
+.weather-condition {
+    background-color: rgb(67, 131, 228);
+    font-size: 1.8rem;
+    padding: 1rem;
+    border: 1rem solid rgb(67, 131, 228);
+    border-radius: 0.5rem;
+}
+
+.condition-title {
+    font-size: 2rem;
+}
+
+.condition-box {
+    color: aliceblue;
+    background: rgb(27, 169, 252);
+}
+
+#chart {
+    display: none;
+}
+
+#days-to-come {
+    display: none;
+}
+
+#chart-box {
+    background-color: rgb(67, 131, 228);
+    height: 36rem;
+    border: 2rem solid rgb(67, 131, 228);
+}
+
+.tocome-box {
+    font-weight: bold;
+    color: rgb(30, 30, 192);
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    background-color: rgb(5, 255, 255);
+    line-height: 2.5rem;
+    height: 36rem;
+    border: 0.8rem solid rgb(67, 131, 228);
+    border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .input-bar {
+        content: '';
+    }
+
+    .tocome-box {
+        height: 46rem;
+    }
+}
